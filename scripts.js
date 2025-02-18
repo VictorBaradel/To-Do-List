@@ -12,3 +12,13 @@ function adicionarTarefa(){ //função para adicionar tarefa
 function removerTarefa(li){ //função para remover tarefa
     li.parentElement.remove(); //remove a tarefa clicada
 }
+
+document.addEventListener("keypress", function(e){ //função para adicionar tarefa ao pressionar a tecla "enter"
+    if(e.key === "Enter"){ //se a tecla pressionada for "enter" executa a função adicionarTarefa
+        const botaoEnter = document.querySelector("button"); //variavel para pegar o botão "adicionar"
+
+        botaoEnter.click();
+    }
+
+});
+
